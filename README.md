@@ -1,1 +1,1 @@
-# Coach-cigarette
+const { Client, GatewayIntentBits } = require(‘discord.js’);const client = new Client({ intents:IntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] }); client.once(‘ready’, () => { console.log(‘Coach_cigarette est prêt !’); }); client.on(‘messageCreate’, message => { if (message.author.bot) return; if (message.content.toLowerCase().includes(‘bonjour’)) { message.reply(‘Salut, je suis Coach_cigarette, prêt à discuter en texte !’); } });client.login(process.env.DISCORD_TOKEN);
